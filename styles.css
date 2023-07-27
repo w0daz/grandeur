@@ -266,7 +266,7 @@ body {
   padding: 3rem 3rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
   background-color: #f3eee1;
 }
 
@@ -335,6 +335,7 @@ body {
   color: #FF7A48;
   background-color: #f3edde;
 }
+
 /* end of advert */
 
 .footer {
@@ -343,7 +344,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #41BFB3;
-  padding: 3rem 3rem 2rem;
+  padding: 3rem 3rem 0.5rem;
 }
 
 .footer > img {
@@ -374,4 +375,243 @@ body {
 
 .footercontact > a:nth-of-type(1) > span {
   padding-top: 0.4rem;
+}
+
+.footer > p {
+  color: #275950;
+  margin-top: 2rem;
+  font-size: 0.7em;
+  display: flex;
+  gap: 0.3em;
+}
+
+.footer > p > span > img {
+  width: 1rem;
+}
+/* end of footer */
+
+@media only screen and (min-width: 600px) {
+
+  .main {
+    min-width: 37.5rem;
+    max-width: 90rem;
+}
+
+  .herocontent {
+    background-image: url(images/hero-background-desktop.jpg);
+    display: grid;
+    grid-template-areas: 
+    "right center left"
+    "right center left"
+    "bottom bottom bottom";
+    align-items: center;
+    justify-content: center;
+  }
+
+  .middlecontent > img {
+    width: 70%;
+  }
+
+  .herocontent > * > h2 {
+    font-size: 1.9em;
+  }
+  
+  .toptext, .bottomtext {
+    gap: 9rem;
+  }
+  
+  .toptext {
+    grid-area: right;
+    margin-bottom: 0rem;
+  }
+  
+  .bottomtext {
+    grid-area: left;
+    margin-top: 0rem;
+  }
+  
+  .bottomtext > h2 {
+    width: 130%;
+  }
+  
+  .toptext > h2 {
+    width: 130%;
+  }
+
+  .bookus {
+    margin-top: 2rem; 
+  }
+  
+  .bookus > a {
+    font-size: 2.5em;
+    background-color: #e9e4d9;
+    width: 40%;
+    border-radius: 30px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  /* end of hero */
+
+  .cardOne, .cardTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardTwo > img {
+    order: 2;
+  }
+
+  .cardOnetext, .cardTwotext {
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3.3rem 5rem;
+  }
+
+  .cardOnetext > h2 {
+    font-size: 2.7em;
+  }
+  
+  .cardOnetext > p {
+    font-size: 1.3em;
+  }
+  
+  .cardTwotext > h2 {
+    font-size: 2.7em;
+  }
+  
+  .cardTwotext > p {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 90%;
+    font-size: 1.3em;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardThree {
+    background-image: url(images/cardThree_desktop.jpg);
+  }
+
+  .cardFour {
+    background-image: url(images/cardFour_desktop.jpg);
+  }
+
+  .cardFive {
+    background-image: url(images/cardFive_desktop.jpg);
+  }
+
+  .cardtext {
+    padding: 25rem 2rem 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .cardtext > h2 {
+    font-size: 2.7em;
+    font-weight: 900;
+  }
+  
+  .cardtext > p {
+    font-size: 1.3em;
+  }
+  /* end of cards */
+
+  .benefits {
+    padding: 5rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+  }
+  
+  .benefits > h2 {
+    font-size: 2.4em;
+  }
+  
+  .benefitstext {
+    gap: 3rem;
+    width: 60%;
+  }
+  
+  .benefitstext > p {
+
+    gap: 0.5rem;
+    padding: 3rem;
+    font-size: 1.2em;
+  }
+  
+  .benefitstext > p > span {
+    font-size: 1.6em;
+  }
+  /* end of benefits */
+
+  .advert {
+    padding: 8rem 3rem;
+    gap: 2.5rem;
+  }
+  
+  .advert > h2 {
+    font-size: 2.4em;
+  }
+  
+  .advert > a {
+    font-size: 2.7em;
+    border-radius: 30px;
+    width: 25%;
+  }
+  
+  .advert > a:hover {
+    color: #FF7A48;
+    background-color: #f3edde;
+  }
+  /* end of advert */
+
+  .footer {
+    padding: 4rem 3rem 0.3rem;
+  }
+  
+  .footer > img {
+    width: 20%;
+  }
+  
+  .footercontact {
+    line-height: 2.6rem;
+  }
+  
+  .footercontact > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #275950;
+    font-size: 1.3em;
+  }
+  
+  .footercontact > a:hover {
+    color: #f0eadb;
+  }
+  
+  .footericon {
+    padding-top: 0.4rem;
+  }
+  
+  .footercontact > a:nth-of-type(1) > span {
+    padding-top: 0.4rem;
+  }
+
+  .footer > p {
+    color: #275950;
+    margin-top: 2rem;
+    font-size: 0.7em;
+  }
+
 }
