@@ -377,7 +377,8 @@ body {
   padding-top: 0.4rem;
 }
 
-.footer > p {
+.footer > a {
+  text-decoration: none;
   color: #275950;
   margin-top: 2rem;
   font-size: 0.7em;
@@ -385,8 +386,12 @@ body {
   gap: 0.3em;
 }
 
-.footer > p > span > img {
+.footer > a > span > img {
   width: 1rem;
+}
+
+.footer > a:hover {
+  color: #f0eadb;
 }
 /* end of footer */
 
@@ -608,7 +613,7 @@ body {
     padding-top: 0.4rem;
   }
 
-  .footer > p {
+  .footer > a {
     color: #275950;
     margin-top: 2rem;
     font-size: 0.7em;
