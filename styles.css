@@ -299,6 +299,95 @@ body {
 }
 /* end of benefits */
 
+.gallery-main {
+  font-family: 'fraunces', serif;
+  background-color: #b1eeff;
+  text-align: center;
+  color: #415a5f;
+}
+
+.gallery-main > h2 {
+  font-size: 1.6em;
+  padding: 1.9rem 0 1.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery > img {
+  /* aspect-ratio: 1; */
+}
+
+/* different style of gallery */
+/* #gallery {    
+  line-height: 0;       
+   -webkit-column-count: 3;    
+   -webkit-column-gap: 0px;    
+   -moz-column-count: 5;
+   -moz-column-gap: 0px;
+    column-count: 3;    
+    column-gap: 0px;    
+}  
+#gallery img {    
+  width: 100% !important;    
+  height: auto !important;  
+}  
+#gallery{    
+  display:inline-block;    
+  margin-right: auto;    
+  margin-left: auto;  
+} */
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 2px;
+	transition: .3s;
+	
+	&:hover &__image {
+		filter: grayscale(1);
+	}
+	
+	&__column {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	&__link {
+		margin: 2px;
+		overflow: hidden;
+		
+		&:hover {
+			.gallery__image {
+				filter: grayscale(0);
+			}
+		}
+	}
+	
+	&__thumb {
+		position: relative;
+	}
+	
+	&__image {
+		display: block;
+		width: 100%;
+		transition: .3s;
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+		
+	}
+	
+}
+
+/* end of gallery */
+
+
+
 .advert {
   font-family: 'fraunces', serif;
   background-color: #FF7A48;
@@ -557,6 +646,29 @@ body {
     font-size: 1.6em;
   }
   /* end of benefits */
+
+  .gallery-main > h2 {
+    font-size: 2.4em;
+    padding: 4rem 0 3rem;
+  }
+
+  .gallery-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 2px;
+    transition: .3s;
+  }
+
+
+
+  /* end of gallery */
 
   .advert {
     padding: 8rem 3rem;
